@@ -1,0 +1,12 @@
+//Footer input styling
+.footer__input {
+    color: $grey;
+    border: none;
+    padding: .2rem;
+    border-radius: 5px;
+    font-size: $large;
+
+    &:hover, :focus {
+        background-color: $tangerine;
+    }
+}

@@ -1,0 +1,73 @@
+//Animation for the images
+
+.animation {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+       transition: transform 500ms ease;
+
+       &:hover,
+       &:focus-within {
+           transform: scale(1.2);
+       }
+    .phone{
+            @include small-break {
+                margin: 2rem auto 0;
+                width: 16rem;
+            }
+
+            @include medium-break {
+                margin: 2rem auto 0;
+                width: 18rem;
+            }
+
+            @include large-break {
+                margin: 4rem auto 0;
+                width: 18rem;
+            }
+
+            @include xlarge-break {
+                margin: 4rem auto 0;
+                width: 20rem;
+            }
+    }
+}
+
+.phone {
+    width: 200px;
+    position: relative;
+}
+
+.brackets {
+    animation: brackets 3s ease-in-out infinite;
+}
+
+.wheel {
+    transform-origin: 79% 79%;
+    animation: wheel 3s linear infinite;
+}
+
+@keyframes wheel {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes brackets {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(140px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+

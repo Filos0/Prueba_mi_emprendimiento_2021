@@ -1,0 +1,24 @@
+//This file you will create your mixins inside of the project
+@mixin small-break {
+    @media (max-width: $phone) {
+        @content;
+    }
+}
+
+@mixin medium-break {
+    @media (min-width:$phone) and (max-width:$tablet) {
+        @content;
+    }
+}
+
+@mixin large-break {
+    @media (min-width:$tablet) and (max-width:$desktop) {
+        @content;
+    }
+}
+
+@mixin xlarge-break {
+    @media (min-width:$large-desktop) {
+        @content;
+    }
+}

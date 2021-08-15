@@ -1,0 +1,11 @@
+//button styling
+.footer__button {
+    background-color: $tangerine;
+    border-radius: 5px 5px 5px 5px;
+    padding: .4rem;
+
+    &:hover {
+        background-color: $white;
+        color: $black;
+    }
+}

@@ -1,0 +1,62 @@
+//Footer section styling
+.footer {
+    background: $black;
+    color: $white;
+    
+    width: 100%;
+   
+    padding: 2rem 0;
+    font-family: $poppins;
+    text-align: center;
+
+    
+    
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1300px;
+        margin: auto;
+        
+         @include small-break {
+             align-items: center;
+             flex-direction: column;
+             flex-wrap: wrap;
+
+         }
+
+        .footer__container--left {
+            margin-left: 1rem;
+        }
+
+        .footer__container--right {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-right: 1rem;
+
+            a {
+                padding: 0 1rem;
+                text-decoration: none;
+                color: $white;
+            }
+
+            @include small-break {
+                align-items: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+
+
+                a {
+                    padding: 1rem 0 .5rem 0;
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
+
+
+    }
+    
+}
+
